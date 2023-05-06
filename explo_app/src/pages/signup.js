@@ -19,7 +19,7 @@ function SignUpPage() {
                   <div class="card-body p-5">
                     <h2 class="text-uppercase text-center mb-5">Create an account</h2>
       
-                    <form onSubmit={handleSubmit}>
+                    <form action="/home" method="POST">
       
                       <div class="form-outline mb-4">
                         <input type="text" id="form3Example1cg" class="form-control form-control-lg" />
@@ -49,8 +49,10 @@ function SignUpPage() {
                       </div>
       
                       <div class="d-flex justify-content-center">
+                        <Link to="/home">
                         <button type="submit"
                           class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
+                          </Link>
                       </div>
       
                       <p class="text-center text-muted mt-5 mb-0">
