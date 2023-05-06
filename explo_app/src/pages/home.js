@@ -29,14 +29,13 @@ function Home() {
 
         <section id="sec-pricing" class="sec-pricing mt-5 py-3">
           <div class="container">
-            <h1 class="h4 text-center">Your home only have those floors</h1>
+            {/* <h1 class="h4 text-center">Your home only have those floors</h1> */}
             <div class="row justify-content-center">
-              <FloorCard device_num="5" floor="Ground Floor" floor_link="/groundfloor"/>
-              <FloorCard device_num="2" floor="First Floor" floor_link="/firstfloor"/>
-              <FloorCard device_num="4" floor="Second Floor" floor_link="/secondfloor"/>
-              <FloorCard device_num="5" floor="Third Floor" floor_link="/thirdfloor"/>
-              <FloorCard device_num="8" floor="Fourth Floor" floor_link="/fourthfloor"/>
-              <FloorCard device_num="6" floor="Fifth Floor" floor_link="/fifthfloor"/>
+              <FloorCard device_num="6" appliance="Floor Activities" floor_link="/floor-activities"/>
+              <FloorCard device_num="3" appliance="Remote Controlled Activities" floor_link="/remote"/>
+              <FloorCard device_num="4" appliance="Heavy Applications" floor_link="/heavy-appliances"/>
+              <FloorCard device_num="3" appliance="Security Appliances" floor_link="/security-appliances"/>
+              <FloorCard device_num="3" appliance="Virtual Appliances" floor_link="/virtual-appliances"/>
             </div>
           </div>
         </section>

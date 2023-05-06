@@ -20,7 +20,7 @@ function LoginPage() {
                             <div class="card" style={{ borderRadius: "15px" }}>
                                 <div class="card-body p-5">
                                     <h2 class="text-uppercase text-center mb-5">Login</h2>
-                                    <form onSubmit={handleSubmit}>
+                                    <form action="/home" method="POST">
                                         <div class="form-outline mb-4">
                                             <input type="email" id="form3Example1cg" class="form-control form-control-lg" required/>
                                             <label class="form-label" for="form3Example1cg">Email</label>

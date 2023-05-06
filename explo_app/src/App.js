@@ -3,14 +3,11 @@ import { Route, Routes } from 'react-router-dom'
 import SignUpPage from './pages/signup';
 import LoginPage from './pages/login';
 import Home from './pages/home';
-import GroundFloor from './pages/floor/groundfloor';
-import FirstFloor from './pages/floor/firstfloor';
-import SecondFloor from './pages/floor/secondfloor';
-import ThirdFloor from './pages/floor/thirdfloor';
-import FourthFloor from './pages/floor/fourthfloor';
-import FifthFloor from './pages/floor/fifthfloor';
-
-
+import Floor from './pages/appliances/floor';
+import Heavy from './pages/appliances/heavy';
+import Remote from './pages/appliances/remote';
+import Security from './pages/appliances/security';
+import Virtual from './pages/appliances/virtual';
 
 function App() {
   return (
@@ -19,12 +16,11 @@ function App() {
         <Route exact path="/home" element={<Home />} />
         <Route exact path="/register" element={<SignUpPage />} />
         <Route exact path="/" element={<LoginPage />} />
-        <Route exact path="/groundfloor" element={<GroundFloor />} />
-        <Route exact path="/firstfloor" element={<FirstFloor />} />
-        <Route exact path="/secondfloor" element={<SecondFloor />} />
-        <Route exact path="/thirdfloor" element={<ThirdFloor />} />
-        <Route exact path="/fourthfloor" element={<FourthFloor />} />
-        <Route exact path="/fifthfloor" element={<FifthFloor />} />
+        <Route exact path="/floor-activities" element={<Floor />} />
+        <Route exact path="/remote" element={<Remote />} />
+        <Route exact path="/heavy-appliances" element={<Heavy />} />
+        <Route exact path="/security-appliances" element={<Security />} />
+        <Route exact path="/virtual-appliances" element={<Virtual />} />
       </Routes>
     </div>
   );

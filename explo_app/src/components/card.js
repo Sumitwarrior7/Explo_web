@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom'
 
 
 
-function FloorCard({ floor, device_num, floor_link }) {
+function FloorCard({ appliance, device_num, floor_link }) {
     return (
         <div class="col-md-4 my-4">
             <div class="card text-center py-3 px-4">
                 <div class="card-block">
-                    <h4 class="card-title h4">{floor}</h4>
+                    <h4 class="card-title h4">{appliance}</h4>
 
                     <h5 class="card-title h6" style={{fontWeight:"400"}}>{device_num} devices</h5>
 

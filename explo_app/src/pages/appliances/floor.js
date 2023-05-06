@@ -9,22 +9,21 @@ import curtain_img from "../../components/floor_comps/images/curtain.jpg"
 import window_img from "../../components/floor_comps/images/window.jpg"
 import lamp_img from "../../components/floor_comps/images/lamp.jpg"
 
-function SecondFloor() {
+
+function Floor() {
   return (
     <div className='m-5'>
-      <h1 className="display-5 text-center mt-2"><b>Second Floor</b></h1>
+      <h1 className="display-5 text-center mt-2"><b>Floor Activities</b></h1>
       <div className='row mx-5 mt-4'>
-        <Floor_comp device_name="Air Conditioner" img_src={ac_img}/>
-        <Floor_comp device_name="Heater" img_src={heater_img}/>
-        <Floor_comp device_name="Light" img_src={light_img}/>
-        <Floor_comp device_name="Lamp" img_src={lamp_img}/>
-        <Floor_comp device_name="Fan" img_src={fan_img}/>
         <Floor_comp device_name="Door" img_src={door_img}/>
         <Floor_comp device_name="Window" img_src={window_img}/>
         <Floor_comp device_name="Curtain" img_src={curtain_img}/>
+        <Floor_comp device_name="Light" img_src={light_img}/>
+        <Floor_comp device_name="Fan" img_src={fan_img}/>
+        <Floor_comp device_name="Lamp" img_src={lamp_img}/>
     </div>
     </div>
   )
 }
 
-export default SecondFloor;
+export default Floor;
